@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+* {
+  box-sizing: border-box;
+}
+.alice-carousel__dots-item {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+input {
+  /* background-color: transparent; */
+  /* width: 100%; */
+}
+input:focus {
+  outline: none;
+}
+ul {
+  margin: 0;
+  margin-inline: unset !important;
+  padding: 0;
+  list-style: none;
+  line-height: normal;
+  font-family: inherit;
+  margin: unset;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.thlight{
+  color: #17a7cf;
+}
+.thdark{
+  color: #146d95;
+}
+
+.prod-item{
+  background: rgba(0, 0, 0, 0.041);
+  border-radius: 20px;
+  border: 1px solid  rgba(0, 0, 0, 0.041);
+}
+
+.position-over{
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  min-height: 200px;
+  border-bottom: 1px solid  rgba(0, 0, 0, 0.041);
+}
+.hero-sl .alice-carousel__dots{
+  position: absolute;
+  z-index: 888;
+  width: 100%;
+  margin-top: -40px;
+
+}
+
+.thumb-h{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition-duration: .5s;
+}
+.hovering-eff .thumb-h{
+  left: -100%
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1440px !important;
+  }
+}
